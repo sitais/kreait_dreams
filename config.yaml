@@ -1,6 +1,0 @@
-database:
-  username: kreait_dreams_user
-  password: password
-  host: localhost
-  port: 5432
-  databaseName: kreait_dreams
