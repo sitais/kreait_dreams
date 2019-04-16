@@ -1,0 +1,24 @@
+.buildlog
+.pub/
+build/
+packages
+.packages
+*.dart.js
+*.js_
+*.js.deps
+*.js.map
+workspace.xml
+Dart_Packages.xml
+.DS_Store
+.idea/
+*.aqueduct.pid
+*.class
+*.log
+*.pyc
+*.swp
+.history
+.svn/
+# Visual Studio Code related
+.vscode/
+# Atom
+.atom/
