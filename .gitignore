@@ -18,6 +18,11 @@ Dart_Packages.xml
 *.swp
 .history
 .svn/
+.dart_tool
+.gitignore
+config.yaml
+client.html
+
 # Visual Studio Code related
 .vscode/
 # Atom

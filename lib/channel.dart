@@ -21,7 +21,7 @@ class KreaitDreamsChannel extends ApplicationChannel {
     logger.onRecord.listen(
       (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
 
-    final config = DreamConfig(options.configurationFilePath);
+    final config = KreaitDreamsConfig(options.configurationFilePath);
     final dataModel = ManagedDataModel.fromCurrentMirrorSystem();
     final persistentStore = PostgreSQLPersistentStore.fromConnectionInfo(
         config.database.username,
@@ -55,8 +55,8 @@ class KreaitDreamsChannel extends ApplicationChannel {
     });
 }
 
-class DreamConfig extends Configuration {
-  DreamConfig(String path): super.fromFile(File(path));
+class KreaitDreamsConfig extends Configuration {
+  KreaitDreamsConfig(String path): super.fromFile(File(path));
 
   DatabaseConfiguration database;
 }
